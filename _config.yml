@@ -1,0 +1,8 @@
+title: SoulUED的开发记录
+description: 每天成长一点点
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-cayman
+
+gems:
+  - jekyll-mentions
