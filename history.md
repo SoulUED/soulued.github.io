@@ -64,7 +64,7 @@ test
 location: http://localhost:9999/weixiao_open/public/weixiao_open/index.html?page=11, state: {"page":122244434343434430}
 ```
 
-为什么第一个state是null呢？首先我们访问一个不带参数的xxx.html，然后调用pushState方法定向的我们push的历史记录，然后再替换为11，最初访问的页面并不是我们push进去的，而是初始化的xxx.html,  所以state为null, 然后我们再前进回我们push后的页面，因为我们调用了replaceState所以原先定位到的4被覆盖了，所以有以上结果
+为什么第一个state是null呢？首先我们访问一个不带参数的xxx.html，然后调用pushState方法定向的我们push的历史记录，然后再替换为11，最初访问的页面并不是我们push进去的，而是初始化的xxx.html,  所以state为null, 然后我们再前进回我们push后的页面，因为我们调用了replaceState所以原先定位到的5被覆盖了，所以有以上结果
 
 如果我们将replaceState和pushState方法调换位置，又会得到什么结果呢？答案如下，相信大家通过上面的分析已经理解了，就不过多作解释了。
 
