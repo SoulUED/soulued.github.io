@@ -3,18 +3,20 @@
 一个React组件仅仅只做模版渲染的工作，这个组件的所有其它逻辑（例如：事件模型，展示数据）来源于别的方式。
 
 ```javascript
-	class Example extends React.Component{
-		render() {
-			return (
-				<div onClick={this.pros.click}>{this.props.text}</div>
-			);
-		}
+class Example extends React.Component{
+	render() {
+		return (
+			<div onClick={this.pros.click}>
+          		{this.props.text}
+          	</div>
+		);
 	}
+}
 ```
 ### 为什么要做Pure Render？
 *	维持代码整洁
-*	方便做性能优化
-*	发挥React组件化的优势，降低代码之间的耦合度
+ *方便做性能优化
+ *发挥React组件化的优势，降低代码之间的耦合度
 
 维持代码整洁：试想一下，组件仅仅是写render函数，对于使用的人来说只需要提供组件所需要数据钩子和事件钩子即可，而应用数据之间的通信完全由应用的开发者决定，这样做维持了组件代码的整洁
 
