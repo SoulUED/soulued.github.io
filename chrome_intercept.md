@@ -11,7 +11,7 @@
 * 家里连不上公司服务器又想在家开发纯前端的同学
 
 ### 插件的下载地址
-在附件中可下载
+https://pan.baidu.com/s/1o8oKuYA
 ### 插件的安装与使用说明
 安装插件
 ![](https://soulued.github.io/img/1.png)
